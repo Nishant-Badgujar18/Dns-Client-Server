@@ -3,6 +3,13 @@
 * DNS Server: supporting all types of queries and replies. Should be able to do both recursive and iterative queries. Caching to be implemented.
 * Client like nslookup: as close as possible to the existing nslookup, all options, all functionality, use of the file /etc/resolv.conf
 
+# Installation:
+
+1. Clone Respository
+
+    ```makefile
+    $ git clone https://github.com/Nishant-Badgujar18/Dns-client-server.git
+
 # Run:
 
 To compile and run the code
@@ -19,3 +26,8 @@ To compile and run the code
 * Set recursive or non-recursive queries
 * Find the values of all parameters(server, port, timeout, query type, class)
 * Caching of responses at the local dns server according to their time to live.
+
+# Authors
+
+* **Kalpesh Ahire (111903038)** 
+* **Nishant Badgujar (111903053)**
