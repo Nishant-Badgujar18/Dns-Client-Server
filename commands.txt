@@ -1,0 +1,48 @@
+Non-Interactive Mode
+
+python3 dns-client.py www.google.com
+python3 dns-client.py www.amazon.com
+python3 dns-client.py -type=ns google.com
+python3 dns-client.py -type=mx google.com
+python3 dns-client.py -query=cname www.amazon.com
+python3 dns-client.py -type=aaaa www.google.com
+python3 dns-client.py -query=a www.google.com
+python3 dns-client.py -type=ptr 8.8.8.8
+python3 dns-client.py -type=ptr 2404:6800:4009:802::200e
+python3 dns-client.py www.google.com 8.8.8.8
+python3 dns-client.py www.google.com dns.google.
+python3 dns-client.py 8.8.8.8
+python3 dns-client.py -timeout=2 -port=56 www.google.com
+python3 dns-client.py -type=ns -type=mx google.com
+python3 dns-client.py -query=any amazon.com
+
+Interactive Mode
+
+python3 dns-client.py 
+set all
+8.8.8.8
+set type=a
+www.google.com
+set querytype=cname
+www.amazon.com
+set type=aaaa
+www.youtube.com
+nonexistingwebsitename
+set querytype=mx
+google.com
+set querytype=NS
+google.com
+set type=PTR
+2404:6800:4009:802::200e
+set type=any
+google.com
+set timeout=10
+set norecurse
+www.google.com
+set recurse
+www.google.com
+server 8.8.4.4
+www.google.com
+lserver 8.8.4.4
+set port=56
+exit
